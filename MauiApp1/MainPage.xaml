@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dadi.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Smart Dice"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Tira dadi!" 
+                HeightRequest="90"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill"/>
+            
+            
+            <Label
+                Text=""
+                FontAttributes="Bold"
+                Style="{StaticResource Headline}"
+                FontSize="44"
+                SemanticProperties.HeadingLevel="Level1"
+                SemanticProperties.Description="gioco dei dadi"
+                x:Name="risultatoLancio"/>
+
+          
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

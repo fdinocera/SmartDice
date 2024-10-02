@@ -1,0 +1,43 @@
+Video YouTube su pubblicazione Play Store
+https://www.google.com/search?q=tutorial+pubblicazione+play+console&sca_esv=9d1cdfe0dab2ad61&sca_upv=1&sxsrf=ADLYWIJ_fS2J405J6QMZG_N1887P6FryCQ:1727375932329&source=lnt&tbs=qdr:y&sa=X&ved=2ahUKEwjA79vmoOGIAxVv_7sIHSHLHEoQpwV6BAgCEBA&biw=1920&bih=911&dpr=1#fpstate=ive&vld=cid:b63d6346,vid:a0UzTDvVAGA,st:0
+
+----------------------------------------------------------------------------------------------------------------------
+=============================
+Genera una Chiave di Release:
+=============================
+
+(sintassi)
+keytool -genkey -v -keystore your-release-key.keystore -keyalg RSA -keysize 2048 -validity 10000 -alias your_alias
+
+(comando inserito)
+keytool -genkey -v -keystore nando-key-release.keystore -keyalg RSA -keysize 2048 -validity 10000 -alias nando
+
+pw keystore: ferdin2_F
+nome e cognome: ferdinando di nocera
+nome unità organizzativa: il faro di ponente games
+nome organizzazione: il faro di ponente games
+località: castellammare di stabia
+provincia: napoli
+codice a due lettere paese: it
+
+locazione file: C:\Users\ferdinando\Desktop\Sviluppo\MauiApp1\nando-key-release.keystore 26/09/2024 19:45
+
+(suggerito da chatGpt)
+<PropertyGroup>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyAlias>your_alias</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>your_key_password</AndroidSigningKeyPass>
+    <AndroidSigningStorePass>your_keystore_password</AndroidSigningStorePass>
+    <AndroidSigningKeyStore>path\to\your-release-key.keystore</AndroidSigningKeyStore>
+</PropertyGroup>
+
+
+<PropertyGroup>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyAlias>nando</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>ferdin2_F</AndroidSigningKeyPass>
+    <AndroidSigningStorePass>ferdin2_F</AndroidSigningStorePass>
+    <AndroidSigningKeyStore>C:\Users\ferdinando\Desktop\Sviluppo\MauiApp1\nando-key-release.keystore</AndroidSigningKeyStore>
+</PropertyGroup>
+----------------------------------------------------------------------------------------------------------------------
+
